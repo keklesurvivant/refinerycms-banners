@@ -4,10 +4,10 @@ module NavigationHelpers
       def path_to(page_name)
         case page_name
         when /the list of banners/
-          admin_banners_path
+          refinery.banners_admin_banners_path
 
          when /the new banner form/
-          new_admin_banner_path
+          refinery.new_banners_admin_banner_path
         else
           nil
         end

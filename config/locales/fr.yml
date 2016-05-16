@@ -1,25 +1,28 @@
 fr:
-  shared:
-    admin:
-      image_picker:
-        image: image
-  plugins:
+  refinery:
+    shared:
+      admin:
+        image_picker:
+          image: image
+    plugins:
+      banners:
+        title: Bannières
     banners:
-      title: Banners
-  admin:
-    banners:
-      actions:
-        create_new: Créer un(e) nouve(au/l/lle) Banner
-        reorder: Réordonner les Banners
-        reorder_done: Fin de réordonnancement des Banners
-      records:
-        title: Banners
-        sorry_no_results: "Désolé ! Aucun résultat."
-        no_items_yet: 'Il n''y a actuellement aucun(e) Banner. Cliquer sur "Créer un(e) nouve(au/l/lle) Banner" pour créer votre premi(er/ère) banner.'
-      banner:
-        view_live_html: Voir ce(t/tte) banner <br/><em>(Ouvre une nouvelle fenêtre)</em>
-        edit: Modifier ce(t/tte) banner
-        delete: Supprimer définitivement ce(t/tte) banner
-  banners:
-    show:
-      other: Autres Banners
+      admin:
+        banners:
+          actions:
+            create_new: Créer une nouvelle bannière
+            reorder: Réordonner les Bannières
+            reorder_done: Fin de réordonnancement des bannières
+          records:
+            title: Bannières
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucune bannière. Cliquer sur "Créer une nouvelle bannière" pour créer votre première bannière.'
+          banner:
+            view_live_html: Voir ce(t/tte) banner <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) banner
+            delete: Supprimer définitivement cette bannière
+      banners:
+        show:
+          other: Autres bannières
+

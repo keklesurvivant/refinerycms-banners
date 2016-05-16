@@ -1,7 +1,7 @@
 class CreateBanners < ActiveRecord::Migration
 
-  def self.up
-    create_table :banners do |t|
+  def up
+    create_table :refinery_banners do |t|
       t.string :name
       t.integer :image_id
       t.string :url
@@ -13,12 +13,12 @@ class CreateBanners < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :banners, :id
+    add_index :refinery_banners, :id
 
-    load(Rails.root.join('db', 'seeds', 'banners.rb'))
+    # load(Rails.root.join('db', 'seeds', 'banners.rb'))
   end
 
-  def self.down
+  def down
     if defined?(UserPlugin)
       UserPlugin.destroy_all({:name => "banners"})
     end
@@ -27,7 +27,7 @@ class CreateBanners < ActiveRecord::Migration
     #  Page.delete_all({:link_url => "/banners"})
     #end
 
-    drop_table :banners
+    drop_table :refinery_banners
   end
 
 end
