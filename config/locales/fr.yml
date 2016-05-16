@@ -20,7 +20,7 @@ fr:
             no_items_yet: 'Il n''y a actuellement aucune bannière. Cliquer sur "Créer une nouvelle bannière" pour créer votre première bannière.'
           banner:
             view_live_html: Voir ce(t/tte) banner <br/><em>(Ouvre une nouvelle fenêtre)</em>
-            edit: Modifier ce(t/tte) banner
+            edit: Modifier cette bannière
             delete: Supprimer définitivement cette bannière
       banners:
         show:

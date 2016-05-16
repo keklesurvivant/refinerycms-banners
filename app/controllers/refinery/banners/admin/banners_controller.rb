@@ -10,7 +10,7 @@ module Refinery
 
         # Only allow a trusted parameter "white list" through.
         def banner_params
-          params.require(:banner).permit(:name, :image_id, :title, :description, :url, :is_active, :start_date, :expiry_date, :page_ids)
+          params.require(:banner).permit(:name, :image_id, :title, :description, :url, :is_active, :start_date, :expiry_date, {:page_ids => []})
         end
 
       end
